@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Park Mambucaba IA - Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="loginView" class="login">
+    <section class="login-card">
+      <div>
+        <strong class="brand">Park Mambucaba IA</strong>
+        <h1>Central de delivery, clientes e cobranca</h1>
+        <p>Demonstracao publica do painel. Os dados desta pagina sao exemplos e nao salvam informacoes reais.</p>
+      </div>
+      <form id="loginForm" class="stack">
+        <label>Email<input id="email" type="email" value="demo@outsidetec.com" autocomplete="username" required></label>
+        <label>Senha<input id="password" type="password" value="demo" autocomplete="current-password" required></label>
+        <button class="btn primary" type="submit">Entrar na demo</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="appView" class="app hidden">
+    <aside class="sidebar">
+      <strong class="brand">Park Mambucaba IA</strong>
+      <span id="userLabel">Cliente Demo - Lanchonete Demo Pereque</span>
+      <nav id="nav" class="nav"></nav>
+      <button class="btn ghost" id="logoutBtn">Sair</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Painel</h1>
+          <p id="pageSubtitle">Demonstracao publica do sistema.</p>
+        </div>
+        <span id="storeStatus" class="pill active">Ativo</span>
+      </header>
+
+      <section id="dashboard" class="page"></section>
+      <section id="orders" class="page hidden"></section>
+      <section id="bot" class="page hidden"></section>
+      <section id="customers" class="page hidden"></section>
+      <section id="billing" class="page hidden"></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="./demo.js"></script>
+</body>
+</html>
