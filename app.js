@@ -27,7 +27,7 @@ const products = [
     id: "batata",
     category: "combos",
     name: "Batata Frita Grande",
-    description: "Porcao grande de batata frita sequinha, ideal para dividir.",
+    description: "Porção grande de batata frita sequinha, ideal para dividir.",
     price: 18.0,
     image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80"
   },
@@ -42,7 +42,7 @@ const products = [
   {
     id: "guarana",
     category: "bebidas",
-    name: "Guarana Lata",
+    name: "Guaraná Lata",
     description: "Refrigerante lata 350ml, gelado para acompanhar o lanche.",
     price: 6.5,
     image: "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=900&q=80"
@@ -50,8 +50,8 @@ const products = [
   {
     id: "acai",
     category: "sobremesas",
-    name: "Acai 500ml Completo",
-    description: "Acai com banana, leite em po, granola, leite condensado e morango.",
+    name: "Açaí 500ml Completo",
+    description: "Açaí com banana, leite em pó, granola, leite condensado e morango.",
     price: 22.0,
     image: "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=900&q=80"
   },
@@ -112,7 +112,7 @@ function renderCart() {
   const cartItems = document.getElementById("cartItems");
 
   if (!items.length) {
-    cartItems.innerHTML = `<p class="empty-cart">Seu carrinho esta vazio.</p>`;
+    cartItems.innerHTML = `<p class="empty-cart">Seu carrinho está vazio.</p>`;
   } else {
     cartItems.innerHTML = items.map(item => `
       <div class="cart-item">
@@ -160,11 +160,12 @@ function buildOrderMessage(formData) {
   });
 
   return [
-    "Novo pedido pelo cardapio online:",
+    "Novo pedido pelo cardápio online:",
     "",
     `Cliente: ${formData.get("name")}`,
     `Telefone: ${formData.get("phone")}`,
-    `Endereco: ${formData.get("address")}`,
+    `Endereço: ${formData.get("address")}`,
+    `Pagamento: ${formData.get("payment")}`,
     "",
     "Itens:",
     ...lines,

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lanchonete Pereque - Cardapio Online</title>
-  <meta name="description" content="Peca lanches, refrigerantes, acai e combos direto pelo cardapio online da Lanchonete Pereque.">
+  <title>Lanchonete Perequê - Cardápio Online</title>
+  <meta name="description" content="Peça lanches, refrigerantes, açaí e combos direto pelo cardápio online da Lanchonete Perequê.">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -13,8 +13,8 @@
     <div class="store-info">
       <div>
         <span class="status">Aberto agora</span>
-        <h1>Lanchonete Pereque</h1>
-        <p>X-tudo, combos, refrigerantes gelados e acai no Parque Mambucaba.</p>
+        <h1>Lanchonete Perequê</h1>
+        <p>X-tudo, combos, refrigerantes gelados e açaí no Parque Mambucaba.</p>
       </div>
       <div class="store-meta">
         <strong>35-50 min</strong>
@@ -34,7 +34,7 @@
       </nav>
 
       <div class="section-title">
-        <h2>Cardapio</h2>
+        <h2>Cardápio</h2>
         <p>Escolha seus itens e finalize o pedido pelo WhatsApp da lanchonete.</p>
       </div>
 
@@ -52,10 +52,17 @@
         <form id="checkoutForm" class="checkout-form">
           <label>Seu nome<input name="name" placeholder="Ex: Mariana" required></label>
           <label>Telefone<input name="phone" placeholder="(24) 99999-0000" required></label>
-          <label>Endereco<input name="address" placeholder="Rua, numero e bairro" required></label>
+          <label>Endereço<input name="address" placeholder="Rua, número e bairro" required></label>
+          <label>Pagamento
+            <select name="payment" required>
+              <option value="Pix">Pix</option>
+              <option value="Cartão na entrega">Cartão na entrega</option>
+              <option value="Dinheiro">Dinheiro</option>
+            </select>
+          </label>
           <button class="checkout-button" type="submit">Enviar pedido</button>
         </form>
-        <small>O pedido sera enviado para a lanchonete pelo WhatsApp.</small>
+        <small>O pedido será enviado para a lanchonete pelo WhatsApp.</small>
       </div>
     </aside>
   </main>

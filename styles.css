@@ -20,7 +20,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -316,7 +317,8 @@ label {
   font-weight: 800;
 }
 
-input {
+input,
+select {
   min-height: 44px;
   width: 100%;
   border: 1px solid var(--line);
@@ -413,6 +415,7 @@ input {
   }
 
   input,
+  select,
   .checkout-button,
   .product-actions button {
     min-height: 50px;
