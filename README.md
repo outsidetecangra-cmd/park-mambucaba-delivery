@@ -1,5 +1,5 @@
-# Park Mambucaba IA - Demo Publica
+# Lanchonete Pereque - Cardapio Online
 
-Demo estatica para apresentacao ao cliente.
+Pagina publica de cardapio e pedidos para clientes da lanchonete.
 
-Este repositorio nao contem backend, banco de dados, sessoes, variaveis de ambiente nem codigo operacional privado.
+Este repositorio contem apenas a pagina estatica de atendimento ao cliente.
