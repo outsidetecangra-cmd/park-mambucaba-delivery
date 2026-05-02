@@ -1,67 +1,99 @@
 const products = [
   {
-    id: "xtudo",
-    category: "lanches",
-    name: "X-Tudo da Casa",
-    description: "Hamburguer, presunto, queijo, ovo, bacon, alface, tomate, milho, batata palha e molho especial.",
-    price: 29.9,
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+    id: "pizza-calabresa",
+    category: "pizzas",
+    name: "Pizza Calabresa Grande",
+    description: "Mussarela, calabresa fatiada, cebola, azeitona e orégano. Serve 3 a 4 pessoas.",
+    price: 54.9,
+    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "combo-xtudo",
-    category: "combos",
-    name: "Combo X-Tudo + Batata + Refri",
-    description: "X-tudo completo, batata frita crocante e refrigerante lata a sua escolha.",
-    price: 39.9,
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=80"
+    id: "pizza-frango-catupiry",
+    category: "pizzas",
+    name: "Pizza Frango com Catupiry Grande",
+    description: "Frango temperado, catupiry, mussarela, milho, azeitona e orégano.",
+    price: 59.9,
+    image: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "xbacon",
-    category: "lanches",
-    name: "X-Bacon",
-    description: "Hamburguer artesanal, queijo derretido, bacon crocante, salada e molho da casa.",
+    id: "pizza-portuguesa",
+    category: "pizzas",
+    name: "Pizza Portuguesa Grande",
+    description: "Presunto, ovos, cebola, pimentão, mussarela, azeitona e orégano.",
+    price: 62.9,
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    id: "pizza-marguerita",
+    category: "pizzas",
+    name: "Pizza Marguerita Grande",
+    description: "Mussarela, tomate, manjericão fresco, parmesão e molho artesanal.",
+    price: 56.9,
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    id: "brotinho-mussarela",
+    category: "brotinhos",
+    name: "Brotinho de Mussarela",
+    description: "Pizza individual com mussarela, molho da casa, tomate e orégano.",
     price: 24.9,
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "batata",
-    category: "combos",
-    name: "Batata Frita Grande",
-    description: "Porção grande de batata frita sequinha, ideal para dividir.",
-    price: 18.0,
-    image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80"
+    id: "brotinho-calabresa",
+    category: "brotinhos",
+    name: "Brotinho de Calabresa",
+    description: "Pizza individual com calabresa, mussarela, cebola e azeitona.",
+    price: 26.9,
+    image: "https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "coca",
+    id: "calzone-frango",
+    category: "calzones",
+    name: "Calzone de Frango com Catupiry",
+    description: "Massa fechada e assada com frango, catupiry, mussarela e milho.",
+    price: 34.9,
+    image: "https://images.unsplash.com/photo-1633436375153-d7045cb93e38?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    id: "calzone-quatro-queijos",
+    category: "calzones",
+    name: "Calzone Quatro Queijos",
+    description: "Mussarela, provolone, parmesão, catupiry e orégano.",
+    price: 36.9,
+    image: "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    id: "coca-2l",
     category: "bebidas",
-    name: "Coca-Cola Lata",
-    description: "Refrigerante lata 350ml bem gelado.",
-    price: 7.0,
+    name: "Coca-Cola 2L",
+    description: "Refrigerante 2 litros bem gelado para acompanhar a pizza.",
+    price: 14.0,
     image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "guarana",
+    id: "guarana-2l",
     category: "bebidas",
-    name: "Guaraná Lata",
-    description: "Refrigerante lata 350ml, gelado para acompanhar o lanche.",
-    price: 6.5,
+    name: "Guaraná 2L",
+    description: "Refrigerante 2 litros gelado.",
+    price: 12.0,
     image: "https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "acai",
-    category: "sobremesas",
-    name: "Açaí 500ml Completo",
-    description: "Açaí com banana, leite em pó, granola, leite condensado e morango.",
-    price: 22.0,
-    image: "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=900&q=80"
+    id: "borda-catupiry",
+    category: "adicionais",
+    name: "Borda Recheada de Catupiry",
+    description: "Adicional de borda recheada para pizzas grandes.",
+    price: 8.0,
+    image: "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=900&q=80"
   },
   {
-    id: "pudim",
-    category: "sobremesas",
-    name: "Pudim da Casa",
-    description: "Fatia de pudim cremoso com calda de caramelo.",
-    price: 9.9,
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80"
+    id: "molho-alho",
+    category: "adicionais",
+    name: "Molho de Alho da Casa",
+    description: "Molho cremoso artesanal para acompanhar pizzas e calzones.",
+    price: 3.5,
+    image: "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=900&q=80"
   }
 ];
 
